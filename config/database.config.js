@@ -4,3 +4,9 @@ module.exports = {
     // url: "mongodb+srv://admin-Zhandos:Qwerty12345@cluster0.vyrk1.mongodb.net/newDatabase?retryWrites=true&w=majority"
 }
 //https://floating-stream-09715.herokuapp.com/
+//Build your app and run it locally
+// git init
+// git add .
+// git commit -m "Description of new changes"
+// heroku login
+// git push heroku master

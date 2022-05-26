@@ -39,7 +39,7 @@ app.get('/login', (req, res, next) => {
     });
 
 
-app.post('/login', (req, res, next) => {
+app.get('/login', (req, res, next) => {
     // the same as res.render('relative_views_path_to_ejsTemplateName', {});
     res.render('login', {
 });
