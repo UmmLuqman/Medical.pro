@@ -1,4 +1,11 @@
-// const express = require('express')
+const express = require('express')
+const UserController = require('../controllers/UserControllers')
+const router = express.Router();
+router.post('/user/register', UserController.register);
+router.post('/user/login', UserController.login);
+module.exports = router
+
+
 // const UserController = require('../controllers/UserControllers')
 // const router = express.Router();
 // router.get('/', UserController.findAll);
@@ -7,15 +14,8 @@
 // router.post('/', UserController.create);
 // //router.patch('/:id', UserController.update);
 // router.patch('/:email', UserController.update);
+// //router.post('/update/:email', UserController.update);
 // //router.delete('/:id', UserController.destroy);
 // router.delete('/:email', UserController.destroy);
+// //router.post('/delete/:email', UserController.destroy);
 // module.exports = router
-
-
-const express = require('express')
-const UserControllers = require('../controllers/UserControllers')
-const router = express.Router();
-router.post('/user/register', UserControllers.register);
-router.post('/user/login', UserControllers.login);
-//router.get('/auth/google', UserController.authGoogle);
-module.exports = router
