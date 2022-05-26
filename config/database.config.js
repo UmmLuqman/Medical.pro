@@ -12,3 +12,6 @@ module.exports = {
 // git push origin (uploading changes to github)
 // heroku login
 // git push heroku master
+//git clone git https://... (cloning to local)
+// git checkout  -b {NEWBRANCHNAME} (creating new branch)
+// git checkout {NEWBRANCHNAME} (entrance to new branch)
