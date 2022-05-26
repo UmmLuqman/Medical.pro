@@ -6,7 +6,9 @@ module.exports = {
 //https://floating-stream-09715.herokuapp.com/
 //Build your app and run it locally
 // git init
+//git status(checking status if not/added elements)
 // git add .
-// git commit -m "Description of new changes"
+// git commit -m "Description of new changes"(saving)
+// git push origin (uploading changes to github)
 // heroku login
 // git push heroku master
