@@ -1,4 +1,6 @@
 const express = require("express");
+const path = require('path');
+const {v4} = require('uuid');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const methodOverride = require('method-override')
@@ -11,6 +13,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(bodyParser.urlencoded ({ extended: true}));
 app.use(bodyParser.json());
 app.use(express.static('public'));
+
 
 app.use(methodOverride('_method'))
 
@@ -32,6 +35,35 @@ mongoose.connect(dbConfig.url, {
     console.log('Could not connect to the database', err);
     process.exit();
 });
+
+let CONTACTS = [
+    {id: v4(), name: 'Asiya', value: '+7-708-123-45-67', marked: false}
+]
+
+app.use(express.json);
+
+app.get('/api/contacts', (req, res) => {
+    setTimeout(() => {
+        res.status(200).json(CONTACTS)
+    }, 1000)
+})
+
+app.post('/api/contacts', (req, res) => {
+    const contact = {...req.body, id: v4(), marked: false}
+    CONTACTS.push(contact)
+    res.status(201).json(contact)
+})
+
+app.delete('/api/contacts/:id', (req, res) => {
+    CONTACTS = CONTACTS.filter(c => c.id !== req.params.id)
+    res.status(200).json({message: 'Contact has been deleted'})
+})
+
+app.put('/api/contacts/:id', (req, res) => {
+    const idx = CONTACTS.findIndex(c => c.id === req.params.id)
+    CONTACTS[idx] = req.body
+    res.json(CONTACTS[idx])
+})
 
 app.get('/login', (req, res, next) => {
     // the same as res.render('relative_views_path_to_ejsTemplateName', {});
