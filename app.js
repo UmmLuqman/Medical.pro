@@ -1,21 +1,23 @@
 const express = require("express");
 const path = require('path');
 const {v4} = require('uuid');
+const passport = require("passport");
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
-const methodOverride = require('method-override')
-const swaggerUi = require('swagger-ui-express')
+const methodOverride = require('method-override');
+
+const swaggerUi = require('swagger-ui-express');
 swaggerDocument = require('./swagger.json');
 const app = express();
+
 const bcrypt = require('bcrypt');
+const passportLocalMongoose = require("passport-local-mongoose");
 app.set('view engine', 'ejs');
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(bodyParser.urlencoded ({ extended: true}));
 app.use(bodyParser.json());
 app.use(express.static('public'));
-
-
-app.use(methodOverride('_method'))
 
 const UserRoute = require('./routes/UserRoute');
 app.use('/user',UserRoute);
@@ -65,16 +67,10 @@ app.put('/api/contacts/:id', (req, res) => {
     res.json(CONTACTS[idx])
 })
 
-app.get('/login', (req, res, next) => {
-    // the same as res.render('relative_views_path_to_ejsTemplateName', {});
-    res.render('relative_views_path_to_your.html', {
-    });
-
-
-app.get('/login', (req, res, next) => {
-    // the same as res.render('relative_views_path_to_ejsTemplateName', {});
-    res.render('login', {
-});
+// let login = app.get('/login', (req, res, next) => {
+//     // the same as res.render('relative_views_path_to_ejsTemplateName', {});
+//     res.render('relative_views_path_to_your.html', {
+//     });
 
 app.get('/clinics', (req, res) => {
         res.render('clinics')
@@ -104,25 +100,13 @@ app.get('/', ((req, res) => {
     findAll(req, res)
 }));
 
-    app.get('/find', (req, res) => {
-        res.render('find');
-    });
 
-    app.get('/update', (req, res) => {
-        res.render('update');
-    });
 
-    app.get('/delete', (req, res) => {
-        res.render('delete');
-    });
+let port     = process.env.PORT||3000;
+// if (port == null || port == "") {
+//     port = 3000;
+// }
 
-        let port     = process.env.PORT||3000;
-        // if (port == null || port == "") {
-        //     port = 3000;
-        // }
-
-        app.listen(port, () => {
-            console.log(`App listening at http://localhost:${port}`)
-        })
-    })
+app.listen(port, () => {
+    console.log(`App listening at http://localhost:${port}`)
 })
