@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+    <link rel="stylesheet" href="/public/css/signInClinics.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display&family=Quicksand:wght@300&family=Rubik:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="navbar">
+    <img class="logo-navbar" src="/public/images/logo-no-text.png" alt="">
+    <h4 class="logo-text">Huge heart</h4>
+    <a class="navbar-section1" href="/html/index.html">Home</a>
+    <a class="navbar-section2" href="/views/findaDoctor.ejs">Find a doctor</a>
+    <a class="navbar-section3" href="../views/aid.ejs">Aid</a>
+    <a class="navbar-section4" href="">Clinics</a>
+</div>
+<div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+            <h2 class="form__title">Sign Up</h2>
+            <input type="text" placeholder="Clinic name" class="input" />
+            <input type="email" placeholder="Email" class="input" />
+            <input type="password" placeholder="Password" class="input" />
+            <button class="btn">
+                <a href="views/ownPageClinics.html">Sign Up</a>
+            </button>
+        </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+            <h2 class="form__title">Sign In</h2>
+            <input type="email" placeholder="Email" class="input" />
+            <input type="password" placeholder="Password" class="input" />
+            <a href="#" class="link">Forgot your password?</a>
+            <button class="btn">Sign In</button>
+        </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="container__overlay">
+        <div class="overlay">
+            <div class="overlay__panel overlay--left">
+                <button class="btn" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay__panel overlay--right">
+                <button class="btn" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <button class="btn-for-clinics">
+        <a href="/html/auth.html">For patients</a>
+    </button>
+</div>
+
+</body>
+</html>

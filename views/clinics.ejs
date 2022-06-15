@@ -1,5 +1,241 @@
 <%- include('header') %>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            width: 70rem;
+            border-spacing:1rem 5rem ;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        td img {
+            text-align: center;
+        }
 
+        img{
+            width:10rem;
 
+        }
+
+    </style>
+<div class="navbar">
+    <img class="logo-navbar" src="/public/images/logo-no-text.png" alt="">
+    <h4 class="logo-text">Huge heart</h4>
+    <a class="navbar-section1" href="">Home</a>
+    <a class="navbar-section2" href="/html/findaDoctor.html">Find a doctor</a>
+    <a class="navbar-section3" href="/html/aid.html">Aid</a>
+    <a class="navbar-section4" href="/html/clinics.html">Clinics</a>
+    <a class="navbar-section5" href="/html/auth.html">Sign in</a>
+</div>
+<div class="clin-tab">
+    <h2>Clinics</h2>
+    <table class="clinics">
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-lucem-medical-clinic.jfif"></td>
+            <td><a href="">Lucem Medical Clinic</a><br>9.6 <br> Lucem medical clinic is a multidisciplinary clinic in Astana, which was opened in 2019. Adults and children from newborn age are accepted here.
+                <br>
+                Lucem medical clinic patients receive medical care in the following areas:
+                <ul>
+                    <li>dermatovenerology;</li>
+                    <li>surgery, proctology, traumatology;</li>
+                    <li>ENT-diseases, dentistry;</li>
+                    <li>ophthalmology; cardiology;</li>
+                    <li>urology, ultrasound diagnostics;</li>
+                    <li>pediatrics, neonatology;</li>
+                    <li>pediatric neurology.</li>
+                </ul>
+                <br>
+                Types of studies that you can take at Lucem Medical Clinic:
+                <ul>
+                    <li>FGDS;</li>
+                    <li>ULTRASOUND, TRUZI;</li>
+                    <li>Dopplerography;</li>
+                    <li>EchoCG;</li>
+                    <li>Holter ECG;</li>
+                    <li>SMAD;</li>
+                    <li>colposcopy;</li>
+                    <li>colonoscopy;</li>
+                    <li>cycloscopy;</li>
+                    <li>tonometry of the eye.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-alanda-clinic.jpg"></td>
+            <td><a href="#">Alanda clinics</a> <br>9.6 <br> Alanda Clinic is a multidisciplinary medical center founded in 2006. There are two branches: in Astana and Karaganda. Doctors accept adults and children from newborn age.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src=" https://api.doq.kz/media/clinics/logo-dostarmed-a.jpg"></td>
+            <td><a href="#">DostarMed A</a> <br>9.6<br> Dostar Med is a network of medical centers in Kazakhstan with 10 branches in Astana, Almaty, Kyzylorda, Atyrau and Kaskelen. The first clinics were opened in 2003. The team of doctors "Dostar Med" advises adults and children in different areas of medicine.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-babyclinic.jpg"></td>
+            <td><a href="#">Baby Clinic</a> <br>9.6<br>"Children's Clinic" is a medical consulting and diagnostic center, which was opened in 2014. In the clinic, doctors of different profiles consult children and adults. The main direction of work is the health of mother and child. </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-ermen-clinic.jpg"></td>
+            <td><a href="#">Ermen Clinic</a> <br>9.6<br> Ermen Clinic is a multidisciplinary medical center, which includes two clinics in Astana. The first center on Bauyrzhan Momyshuly Avenue was opened in 2012, and the second on Shakarim Kudaiberdyuly Street - in 2014.Doctors of the clinic consult adults and children. At Ermen Clinic, patients undergo laboratory, ultrasound examinations and receive a course of treatment in a day hospital. The clinic has developed a rehabilitation program after strokes, injuries and operations.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/dostarmed.jpeg"></td>
+            <td><a href="#">DostarMed</a> <br>9.6<br> Dostar Med is a network of medical centers in Kazakhstan with 10 branches in Astana, Almaty, Kyzylorda, Atyrau and Kaskelen. The first clinics were opened in 2003. The team of doctors "Dostar Med" advises adults and children in different areas of medicine.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-jas-klinik.jpg"></td>
+            <td><a href="#">Jas Clinic</a> <br>9.6<br> Coming soon ...</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-mds-servis-plus.png"></td>
+            <td><a href="#">Service Plus</a> <br>9.6<br> "MDS Service Plus" is a medical center opened in 2005, which provides outpatient care for adults and children. In addition to general practitioners, specialists of a narrow profile work at the center: neurologist-epileptologist, plastic surgeon, narcologist, psychotherapist. At MDS Service Plus, patients undergo laboratory tests and treatment in a day hospital.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-tsetnamed.png"></td>
+            <td><a href="#">Medical Center of Traditional and Folk Medicine</a> <br>9.6<br> The Center of Traditional and Folk Medicine is a multidisciplinary clinic opened in 1990. Doctors of the center accept adults and children in the following directions:
+                <ul>
+                    <li>therapy;</li>
+                    <li>cardiology;</li>
+                    <li>gynecology;</li>
+                    <li>neurology;</li>
+                    <li>dermatovenerology;</li>
+                    <li>otorhinolaryngology;</li>
+                    <li>ophthalmology;</li>
+                    <li>surgery.</li>
+                </ul>
+            <td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B0_2.jpg"></td>
+            <td><a href="#">Ultraline</a> <br>9.6<br> Ultraline is a multidisciplinary medical center with 7 branches in Nur—Sultan, opened in 2018.
+
+                Specialists of our center advise patients in 4 main areas:
+                <ul>
+                    <li>gynecology;</li>
+                    <li>urology;</li>
+                    <li>endocrinology;</li>
+                    <li>dermatocosmetology and dermatovenerology.</li>
+                </ul>
+                Here you can undergo all types of ultrasound and take tests. The clinic also has treatment rooms and a department of therapeutic and preventive massage. Many specialists of our center are doctors with more than 15 years of experience and higher categories. </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/_.png"></td>
+            <td><a href="#">Ansar</a> <br>9.6<br> ANSAR Medical Center is a multidisciplinary medical center located in the center of the capital, at the intersection of the right and left banks.
+
+                The clinic is equipped with high-tech equipment of expert class, which allows for accurate and advanced diagnostics, prevention and treatment of various diseases in the shortest possible time.
+
+                Comfortable offices and waiting rooms, highly qualified and experienced
+
+                medical staff who will make every effort to ensure that you are satisfied with your choice.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-medline.jpg"></td>
+            <td><a href="#">MedLine</a> <br>9.6<br> Medline Medical Center was founded in Astana on February 8, 2001. At the time of opening, the clinic had 8 doctors and two studies: electrocardiography and computer spirography. After 17 years of operation, the center has expanded its scope and offers the services of 35 specialists. In Medline, doctors of various profiles consult, diagnose and treat adults and children.
+                <br>
+                Doctors of the center use research methods:
+                <ul>
+                    <li>laboratory blood tests;</li>
+                    <li>allergy tests;</li>
+                    <li>spirography;</li>
+                    <li>Ultrasound of all organs;</li>
+                    <li>ECG, EchoCG, Holter monitoring;</li>
+                    <li>encephalography;</li>
+                    <li>SMAD - daily monitoring of blood pressure.</li>
+                </ul>
+                The clinic has a treatment room where the patient will receive all the necessary injections. The center also offers massage and acupuncture sessions for rapid recovery of the body. The clinic's doctors help patients with sleep disorders, correct and solve snoring problems. Medline is seeking medical care that has been tested for years.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/Green_Clinic_logo.png"></td>
+            <td><a href="#">Green Clinic</a> <br>9.6<br> "Green Clinic" is a multidisciplinary family clinic. Here a person receives a consultation and is examined using laboratory, ultrasound and functional diagnostic methods. Patients are treated in a day hospital. If surgical intervention is necessary, the doctors of the clinic use an outpatient operating room.
+                <br>
+                In addition to standard research methods, the "Green Clinic" uses:
+                <ul>
+                    <li>colposcopy is a gynecological procedure that helps to identify neoplasms and distinguish a benign tumor from a malignant one;</li>
+                </ul>
+                <br>
+                The clinic also employs physiotherapists who accelerate the process of rehabilitation and treatment of patients. Among the new methods of physiotherapy, the device "BTL – 4000" operates. Gynecologists use it in the treatment of diseases of the reproductive system.
+                <br>
+                In the "Green Clinic" they apply for a comprehensive medical service for themselves and their loved ones.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-altay-clinic.png"></td>
+            <td><a href="#">Altay Clinic</a> <br>9.6<br> Coming soon... </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-salutem.png"></td>
+            <td><a href="#">Salutem</a> <br>9.6<br> "Salutem" is a center for reproductive health of men and women, opened on January 3, 2018 on the right bank of Astana.
+                <br>
+                Main areas of work:
+                <ul>
+                    <li>diagnosis and treatment of diseases of urological, gynecological profile;</li>
+                    <li>assistance to couples with infertility;</li>
+                    <li>solving problems of erectile dysfunction in men;</li>
+                    <li>prevention of oncological diseases of the genital area.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-medical-center-samruk.png"></td>
+            <td><a href="#">MEDICAL CENTER SAMRUK</a> <br>9.6<br>Coming soon... </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-talmas-medikus.jpg"></td>
+            <td><a href="#">Talmas Medikus</a> <br>9.6<br>  Talmas Medicus is a multidisciplinary center that has been open since 2010.  Doctors of the clinic consult adults and children, as well as select a treatment regimen according to methods based on evidence-based medicine. The center has a day hospital and a separate hospital for pregnant women.
+                <br>
+                In the clinic, the patient can undergo research:
+                <ul>
+                    <li>Ultrasound;</li>
+                    <li>mammography;</li>
+                    <li>endoscopy.</li>
+                </ul>
+                Additional services of the center:
+                <ul>
+                    <li>massage;</li>
+                    <li>pregnancy management;</li>
+                    <li>intimate plastic surgery;</li>
+                    <li>plasmolifting.</li>
+                </ul>
+                A school of intimate health has been opened at the clinic, where doctors teach people about the structure, physiology and proper care of their body. Talmas Medicus is contacted when they want to undergo a thorough examination and receive recommendations from doctors in a calm, pleasant atmosphere.
+            </td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-medar.png"></td>
+            <td><a href="#">Medar</a> <br>9.6<br> Medar Medical Center is a multidisciplinary clinic. Here a person will receive a consultation and undergo an examination using laboratory and ultrasound diagnostic methods. The clinic has a treatment room where the patient will be given the necessary drug injections.
+                <br>
+                The center conducts research:
+                <ul>
+                    <li>Ultrasound of all organs and systems;</li>
+                    <li>sampling of analyzes.</li>
+                </ul>
+                Doctors "Medar" has been cooperating with the diagnostic laboratory "Olympus" for 10 years, so patients can pass all types of biochemical tests within the walls of the clinic. The Center provides pregnancy monitoring programs and annual medical care contracts. They turn to Medar when they want to receive competent medical care, as well as an adequate price-quality ratio.</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/logo-extra-comfort.jpg"></td>
+            <td><a href="#">Extra Comfort</a> <br>9.6<br>Coming soon...</td>
+        </tr>
+        <tr>
+            <td class="td-img"><img src="https://api.doq.kz/media/clinics/124134.png"></td>
+            <td><a href="#">Mediscan</a> <br>9.6<br>Mediscan is a clinic for complex diagnostics of human health in Astana.
+                The main direction is a full examination of patients and consultation of narrow specialists. Adults and children from newborn age are accepted here.
+                <br>
+                Mediscan patients can be examined:
+                <ul>
+                    <li>MRI — magnetic resonance imaging;</li>
+                    <li>CT — computed tomography;</li>
+                    <li> Ultrasound — ultrasound examination;</li>
+                    <li>Neurosonography — ultrasound screening of the brain of children under one year old;</li>
+                    <li>EchoCG, ECG, SMAD, HOLTER;</li>
+                    <li>Laboratory tests;</li>
+                    <li>Endovideoscopy of ENT organs;</li>
+                    <li>Video colposcopy;</li>
+                    <li>PCR/ECL/express test for COVID19.</li>
+                </ul>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
 
 <%- include('footer') %>

@@ -10,15 +10,13 @@ let schema = new mongoose.Schema({
         type:String,
         default: ''
     },
-    lastName: String,
+    lastName: {
+        type:String,
+        required: true
+    },
     phone:String,
     disease:String
 });
 let userModel = new mongoose.model('User', schema);
 module.exports = userModel;
-
-let userSchema = new mongoose.Schema({
-    email: String,
-    password: String
-});
 

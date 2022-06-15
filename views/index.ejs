@@ -1,100 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="/js/signIN.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display&family=Quicksand:wght@300&family=Rubik:wght@700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+<%- include('header') %>
 <div id="main-page">
     <div class="navbar">
-        <img class="logo-navbar" src="images/logo-no-text.png" alt="">
+        <img class="logo-navbar" src="/public/images/logo-no-text.png" alt="">
         <h4 class="logo-text">Huge heart</h4>
         <a class="navbar-section1" href="">Home</a>
-        <a class="navbar-section2" href="findaDoctor.ejs">Find a doctor</a>
-        <a class="navbar-section3" href="aid.ejs">Aid</a>
-        <a class="navbar-section4" href="clinics.ejs">Clinics</a>
-        <a class="navbar-section5" href="authentication.ejs">Sign in</a>
+        <a class="navbar-section2" href="/html/findaDoctor.html">Find a doctor</a>
+        <a class="navbar-section3" href="/html/aid.html">Aid</a>
+        <a class="navbar-section4" href="/html/clinics.html">Clinics</a>
+        <a class="navbar-section5" href="/html/auth.html">Sign in</a>
     </div>
     <div class="first-page">
-        <img class="img-first-page" src="images/tech-med.png" alt="">
+        <img class="img-first-page" src="/public/images/tech-med.png" alt="">
         <h1 class="title-first-page">Virtual healthcare for you</h1>
         <p class="p-first">We maintain all types of communication with our patients to facilitate the receipt of medical care</p>
-        <a class="btn-first-page" href="consultation.ejs">Consult today</a>
+        <a class="btn-first-page" href="/html/consult.html">Consult today</a>
     </div>
 </div>
 <div class="second-page">
     <h1 class="title-second-page">Our services</h1>
     <p class="p-second-page">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
-    <img class="img-second-page" src="images/bckgr-2-page.jpg" alt="">
+    <img class="img-second-page" src="/public/images/bckgr-2-page.jpg" alt="">
     <div class="boxes-second-page">
         <div class="box-second-page1">
-            <img class="box-img-second-page1"src="images/1.jpg" alt="">
+            <img class="box-img-second-page1" src="/public/images/1.jpg" alt="">
             <a class="title-box-second-page1" href="...">Search doctor</a>
             <p class="p-box-second-page1">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
         </div>
         <div class="box-second-page2">
-            <img class="box-img-second-page2" src="images/2.jpg" alt="">
-            <a class="title-box-second-page2" href="...">Online pharmacy</a>
+            <img class="box-img-second-page2" src="/public/images/2.jpg" alt="">
+            <a class="title-box-second-page2" href="/html/pharm.html">Online pharmacy</a>
             <p class="p-box-second-page2">Buy  your medicines with our mobile application with a simple delivery system</p>
         </div>
         <div class="box-second-page3">
-            <img class="box-img-second-page3" src="images/3.jpg" alt="">
+            <img class="box-img-second-page3" src="/public/images/3.jpg" alt="">
             <a class="title-box-second-page3" href="...">Consultation</a>
             <p class="p-box-second-page3">Free consultation with our trusted doctors and get the best recomendations</p>
         </div>
         <div class="box-second-page4">
-            <img class="box-img-second-page4" src="images/4.jpg" alt="">
+            <img class="box-img-second-page4" src="/public/images/4.jpg" alt="">
             <a class="title-box-second-page4" href="...">Details Info</a>
             <p class="p-box-second-page4">Free consultation with our trusted doctors and get the best recomendations.</p>
         </div>
         <div class="box-second-page5">
-            <img class="box-img-second-page5" src="images/5.jpg" alt="">
+            <img class="box-img-second-page5" src="/public/images/5.jpg" alt="">
             <a class="title-box-second-page5" href="...">Emergency care</a>
             <p class="p-box-second-page5">You can get 24/7 urgent care for yourself or your children and your
                 lovely family</p>
         </div>
         <div class="box-second-page6">
-            <img class="box-img-second-page6" src="images/6.jpg" alt="">
+            <img class="box-img-second-page6" src="/public/images/6.jpg" alt="">
             <a class="title-box-second-page6" href="...">Tracking</a>
             <p class="p-box-second-page6">Track and save your medical history and health data </p>
         </div>
         <button class="btn-second-page">Learn more</button>
     </div>
 </div>
+
+<div class="homepage-boxes">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="opening-hours">
+                    <h2 class="d-flex align-items-center">Opening Hours</h2>
+
+                    <ul class="p-0 m-0">
+                        <li>Monday - Thursday <span>8.00 - 19.00</span></li>
+                        <li>Friday <span>8.00 - 18.30</span></li>
+                        <li>Saturday <span>9.30 - 17.00</span></li>
+                        <li>Sunday <span>9.30 - 15.00</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                <div class="emergency-box">
+                    <h2 class="d-flex align-items-center">Emergency</h2>
+
+                    <div class="call-btn button gradient-bg">
+                        <a class="d-flex justify-content-center align-items-center" href="#"><img src="/public/images/emergency-call.png"> +7 (727) 223 53 53</a>
+                    </div>
+
+                    <p>If you encounter an emergency, call us at the above number</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5 mt-5 mt-lg-0">
+                <div class="appointment-box">
+                    <h2 class="d-flex align-items-center">Make an Appointment</h2>
+
+                    <form class="d-flex flex-wrap justify-content-between">
+                        <select class="select-department">
+                            <option value="value1">Select Department</option>
+                            <option value="value2">Cardiology</option>
+                            <option value="value3">Gastroenterology</option>
+                            <option value="value3">Medical Lab</option>
+                            <option value="value3">Dental Care</option>
+                            <option value="value3">Gynecology</option>
+                            <option value="value3">Dermatology</option>
+                            <option value="value3">Oncology</option>
+                            <option value="value3">Surgery</option>
+                            <option value="value3">Neurology</option>
+                            <option value="value3">Orthopaedic</option>
+                            <option value="value3">Pediatric</option>
+                            <option value="value3">Ophthalmology</option>
+                        </select>
+
+                        <select class="select-doctor">
+                            <option>Select Doctor</option>
+                            <option>Khalip Galina Andreevna</option>
+                            <option>Imamnazarov Akmalzhan Erkinovich</option>
+                            <option>Tlenbayeva Zhanna Maratovna</option>
+                            <option>Surmin Sergey Viktorovich</option>
+                            <option>Kasimov Karim Muslimovich</option>
+                            <option>Zhienalina Gulzira Satkhanovna</option>
+                            <option>Kurmanbaeva Akmaral Rakhymtaevna</option>
+                            <option>Kurmanbaeva Akmaral Rakhymtaevna</option>
+                            <option>Zhaksyk Zhalgasbek Nurlanuly</option>
+                            <option>Mukanova Makpal Bakhtiyarovna</option>
+                            <option>Seitova Manar Bakhytzhanovna</option>
+                            <option>Bekesheva Saule Talgatovna</option>
+                            <option>Yakovenko Georgy Ivanovich</option>
+                            <option>Akhmedina Uldana Kuanyshbekovna</option>
+                            <option>Absemetova Rabiga Duisembayevna</option>
+                            <option>Dosanov Bolotbek Alibekovich</option>
+                            <option>Baymukhametov Askar Tursynovich</option>
+                            <option>Suleimenov Zhetes Zhukunovich</option>
+                            <option>Roschektaeva Tamara Vyacheslavovna</option>
+                        </select>
+
+                        <input type="text" placeholder="Name">
+
+                        <input type="number" placeholder="Phone No">
+
+                        <input class="button gradient-bg" type="submit" value="Boom Appoitnment">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our-departments">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="our-departments-wrap">
+                    <h2>Our Departments</h2>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/cardiogram.png" alt="">
+
+                                    <h3>Cardioology</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/stomach-2.png" alt="">
+
+                                    <h3>Gastroenterology</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/blood-sample-2.png" alt="">
+
+                                    <h3>Medical Lab</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/teeth.png" alt="">
+
+                                    <h3>Dental Care</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/stretcher.png" alt="">
+
+                                    <h3>Surgery</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/scanner.png" alt="">
+
+                                    <h3>Neurology</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-md-0">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/bones.png" alt="">
+
+                                    <h3>Orthopaedy</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-lg-0">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/blood-donation-2.png" alt="">
+
+                                    <h3>Pediatry</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-0">
+                            <div class="our-departments-cont">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <img src="/public/images/glasses.png" alt="">
+
+                                    <h3>Ophthalmology</h3>
+                                </header>
+
+                                <div class="entry-content">
+                                    <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+                                </div>
+
+                                <footer class="entry-footer">
+                                    <a href="#">read more</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="third-page">
-    <img class="img-third-page" src="images/med-heart.png" alt="">
+    <img class="img-third-page" src="/public/images/med-heart.png" alt="">
     <h1 class="title-third-page">Leading healthcare providers</h1>
     <p class="p-third-page">"Huge Heart" provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride
         in the solutions we deliver</p>
-    <button class="btn-third-page">Learn more</button>
 </div>
 <div class="fourth-page">
     <h1 class="title-fourth-page">Clinics' quality</h1>
     <p class="p-fourth-page">Before cooperating with us, each company undergoes a detailed inspection and check for the quality of equipment and the possibility of further treatment</p>
-    <img class="img-fourth-page" src="images/medical-room.png" alt="">
-    <button class="btn-fourth-page">Learn more</button>
+    <img class="img-fourth-page" src="/public/images/medical-room.png" alt="">
 </div>
 <div class="fifth-page">
-    <img class="img-fifth-page" src="images/754b1f13e7155748.jpeg" alt="">
-    <img class="dots1-fifth-page" src="images/dots.png" alt="">
-    <img class="dots2-fifth-page" src="images/dots.png" alt="">
+    <img class="img-fifth-page" src="/public/images/754b1f13e7155748.jpeg" alt="">
+    <img class="dots1-fifth-page" src="/public/images/dots.png" alt="">
+    <img class="dots2-fifth-page" src="/public/images/dots.png" alt="">
     <h1 class="title-fifth-page">What our customer are saying</h1>
     <h1 class="name-fifth-page">Arman Talgat</h1>
     <p class="job-fifth-page">Accountant</p>
     <p class="p-fifth-page">"We fought for the life of my younger brother together, and we were able to defeat this disease. We found the best clinic in which we were provided with high-quality treatment in just a month. We are very grateful to this service!"</p>
     <button class="btn-5">
-        <a href="reviews.ejs">More...</a>
+        <a href="/html/rev.html">More...</a>
     </button>
 </div>
 <div class="sixth-page">
     <h1 class="title-sixth-page">Check out our latest article</h1>
     <div class="box1-sixth-page">
-        <img class="img1-sixth-page" src="images/article_img1.jpg" alt="">
+        <img class="img1-sixth-page" src="/public/images/article_img1.jpg" alt="">
         <h1 class="title1-sixth-page">Disease detection, check
             up in the laboratory</h1>
         <p class="p1-sixth-page">In this case, the role of the health laboratory is very important to do
@@ -102,43 +351,17 @@
         <a class="link1-sixth-page" href="https://www.emedicinehealth.com/checkup/article_em.htm">Read more</a>
     </div>
     <div class="box2-sixth-page">
-        <img class="img1-sixth-page" src="images/article_img2.jpg" alt="">
+        <img class="img1-sixth-page" src="/public/images/article_img2.jpg" alt="">
         <h1 class="title1-sixth-page">Herbal medicines that are
             safe for consumption</h1>
         <p class="p1-sixth-page">Herbal medicine is very widely used at this time because of its very good for your health...</p>
         <a class="link1-sixth-page" href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/herbal-medicine">Read more</a>
     </div>
     <div class="box3-sixth-page">
-        <img class="img1-sixth-page" src="images/article_img3.jpg" alt="">
+        <img class="img1-sixth-page" src="/public/images/article_img3.jpg" alt="">
         <h1 class="title1-sixth-page">Natural care for healthy facial skin</h1>
         <p class="p1-sixth-page">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
         <a class="link1-sixth-page" href="https://www.skincareox.com/organic-skin-care/best-organic-skin-care-lines/">Read more</a>
     </div>
 </div>
-<div class="footer-page">
-    <div class="right-footer-page">
-        <img class="footer-img" src="images/logo.png" alt="">
-        <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-        <svg class="logo2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-        <svg class="logo3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-        <svg class="logo4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-        <svg class="logo5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
-    </div>
-    <div class="middle-footer-page">
-        <h1 class="footer-title1">Company</h1>
-        <p class="footer-p1.0">About</p>
-        <p class="footer-p1.1">Find a doctor</p>
-        <p class="footer-p1.2">Q&A</p>
-        <p class="footer-p1.3">Reviews</p>
-    </div>
-    <div class="left-footer-page">
-        <h1 class="footer-title2">Help</h1>
-        <p class="footer-p2.0">Help center</p>
-        <p class="footer-p2.1">Contact support</p>
-        <p class="footer-p2.2">Instructions</p>
-        <p class="footer-p2.3">How it works</p>
-    </div>
-    <h1 class="rights">© 2022 Huge heart, Inc. All rights reserved.</h1>
-</div>
-
 <%- include('footer') %>

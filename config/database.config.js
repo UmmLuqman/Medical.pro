@@ -3,7 +3,8 @@ module.exports = {
     url:'mongodb+srv://greeyyyjupiter:Aitu2022!@cluster0.vyrk1.mongodb.net/myDatabase?retryWrites=true&w=majority',
     // url: "mongodb+srv://admin-Zhandos:Qwerty12345@cluster0.vyrk1.mongodb.net/newDatabase?retryWrites=true&w=majority"
 }
-//https://glacial-beach-13900.herokuapp.com/
+
+//https://agile-dawn-70315.herokuapp.com/
 //Build your app and run it locally
 // git init
 //git status(checking status if not/added elements)
